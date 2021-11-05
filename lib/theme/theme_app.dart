@@ -66,7 +66,6 @@ Map<ThemeRef, Object> darkTheme = {
   ThemeApp.headline6Changed: const TextStyleRef(
     TextStyle(
       fontSize: 20,
-      fontFamily: 'Oswald',
       fontWeight: FontWeight.w400,
       // color: ThemeApp.colorsBlack,
     ),
@@ -74,7 +73,7 @@ Map<ThemeRef, Object> darkTheme = {
   ThemeApp.bodyText2Changed: const TextStyleRef(
     TextStyle(
       fontSize: 14,
-      fontFamily: 'PT Serif',
+      fontFamily: 'Fruktur',
       // fontWeight: FontWeight.w400,
       // color: ThemeApp.colorsBlack,
     ),
@@ -144,7 +143,7 @@ class ThemeDataApp {
       // headline3: TextStyle(fontSize: 48.0, fontWeight: FontWeight.bold),
       // headline4: TextStyle(fontSize: 34.0, fontWeight: FontWeight.bold),
       // headline5: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-      headline6: TextStyle(fontSize: 20.0),
+      headline6: TextStyle(fontSize: 20.0, fontFamily: 'Georgia'),
       // subtitle1: TextStyle(fontSize: 16.0, fontFamily: 'Georgia'),
       // subtitle2: TextStyle(fontSize: 14.0, fontFamily: 'Georgia'),
       // bodyText1: TextStyle(fontSize: 16.0, fontFamily: 'Georgia'),
