@@ -26,14 +26,14 @@ class SecondPage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                if (Themed.ifCurrentThemeIs(anotherTheme)) {
+                if (Themed.ifCurrentThemeIs(darkTheme)) {
                   Themed.clearCurrentTheme();
                 } else {
-                  Themed.currentTheme = anotherTheme;
+                  Themed.currentTheme = darkTheme;
                 }
               },
               child: Text(
-                Themed.ifCurrentThemeIs(anotherTheme)
+                Themed.ifCurrentThemeIs(darkTheme)
                     ? 'Back to default theme ${ThemeApp.primary}'
                     : 'Apply another theme ${ThemeApp.primary}',
               ),
