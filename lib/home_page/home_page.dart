@@ -16,6 +16,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text(
           'Themed - home',
+          style: ThemeApp.headline6Changed,
         ),
         actions: [
           changeTheme(),
@@ -25,6 +26,14 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text(
+              'ABC abc 123 headline6Changed',
+              style: ThemeApp.headline6Changed,
+            ),
+            const Text(
+              'ABC abc 123 bodyText2Changed',
+              style: ThemeApp.bodyText2Changed,
+            ),
             Text(
                 'estimateBrightnessForColor: ${ThemeData.estimateBrightnessForColor(ThemeApp.primary)}'),
             Text('Theme.of.brightness: ${Theme.of(context).brightness}'),

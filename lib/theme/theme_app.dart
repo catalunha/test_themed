@@ -25,6 +25,23 @@ class ThemeApp {
   static const cardColor = ColorRef(Colors.white, id: "cardColor");
   //color for especific widget
   static const colorsBlack = ColorRef(Colors.black, id: "ColorsBlack");
+  // Styles
+  static const headline6Changed = TextStyleRef(
+    TextStyle(
+      fontSize: 10,
+      // fontFamily: 'Georgia',
+      // fontWeight: FontWeight.w400,
+      // color: ThemeApp.colorsText,
+    ),
+  );
+  static const bodyText2Changed = TextStyleRef(
+    TextStyle(
+      fontSize: 14,
+      // fontFamily: 'Georgia',
+      // fontWeight: FontWeight.w400,
+      // color: ThemeApp.colorsText,
+    ),
+  );
 }
 
 Map<ThemeRef, Object> darkTheme = {
@@ -46,6 +63,22 @@ Map<ThemeRef, Object> darkTheme = {
   ThemeApp.backgroundTitle: Colors.grey.shade300,
   ThemeApp.cardColor: Colors.grey.shade300,
   // ThemeApp.ColorsBlack: Colors.black,
+  ThemeApp.headline6Changed: const TextStyleRef(
+    TextStyle(
+      fontSize: 20,
+      fontFamily: 'Oswald',
+      fontWeight: FontWeight.w400,
+      // color: ThemeApp.colorsBlack,
+    ),
+  ),
+  ThemeApp.bodyText2Changed: const TextStyleRef(
+    TextStyle(
+      fontSize: 14,
+      fontFamily: 'PT Serif',
+      // fontWeight: FontWeight.w400,
+      // color: ThemeApp.colorsBlack,
+    ),
+  ),
 };
 Map<ThemeRef, Object> orangeTheme = {
   ThemeApp.primary: Colors.orange,
@@ -65,6 +98,15 @@ Map<ThemeRef, Object> orangeTheme = {
   ThemeApp.backgroundPhrase: Colors.orange.shade100,
   ThemeApp.backgroundTitle: Colors.grey.shade300,
   ThemeApp.cardColor: Colors.white,
+  //
+  ThemeApp.headline6Changed: const TextStyleRef(
+    TextStyle(
+      fontSize: 30,
+      // fontFamily: 'Georgia',
+      // fontWeight: FontWeight.w400,
+      // color: ThemeApp.colorsText,
+    ),
+  ),
 };
 
 class ThemeDataApp {
